@@ -10,24 +10,21 @@ or \
 
 ---
 
-cd to cloned repo and add your own .env file: 
->cd Telegram_send_messages_and_files \
->touch .env
+cd to cloned repo: 
+>cd Telegram_send_messages_and_files
 
 ---
-
 Telegram **API Token**: https://core.telegram.org/bots/features#botfather \
-Insert your own Telegram API Token to .env file: 
->echo tg_api_token={your_token} >> .env
-
+Insert your own Telegram API Token: 
+>echo tg_api_token={your_token}
 ---
-
 The recepient's **Chat Id**. Get it from bot: `@getidsbot` \
-_Insert it in .env file - ONLY if you are going to send messages permanently to one specific user or chat (bot-informer etc), \
-otherwise, don't insert it to .env and let the script ask the recipient's Chat Id each time._ 
->echo tg_user_chat_id={your_id} >> .env 
-
+_Fill it - ONLY if you are going to send messages permanently to one specific user or chat (bot-informer etc), \
+otherwise, don't fill it in the script and let the script ask the recipient's Chat Id each time._ 
+>echo tg_user_chat_id={your_id}
 ---
+This scripts requires the cURL to be installed! 
+
 To install curl on Ubuntu (Debian, Mint etc):
 >sudo apt update -y && sudo apt install -y curl
 
