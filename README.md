@@ -38,7 +38,10 @@ sudo pacman -Sy curl
 To install curl on Alpine: 
 sudo apk add curl
 
+Make the script available from any place:
+sudo cp telegram-send-message.sh /usr/bin
+sudo cp telegram-send-file.sh /usr/bin
 
 Usage: 
->./telegram-send-message.sh 'message text' \
->./telegram-send-file.sh path_to_file
+>/usr/bin/telegram-send-message.sh 'message text'  or  telegram-send-message.sh \
+>/usr/bin/telegram-send-file.sh absolute_path_to_file  or  telegram-send-file.sh absolute_path_to_file
