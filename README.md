@@ -4,7 +4,9 @@
 ---
 
 Clone this repo: 
->git clone git@github.com:DevOps-autokz/Telegram_send_messages_and_files.git
+>git clone https://github.com/nextleveldevops/Telegram_send_messages_and_files.git \
+or \
+>git clone git@github.com:nextleveldevops/Telegram_send_messages_and_files.git
 
 ---
 
@@ -27,21 +29,26 @@ otherwise, don't insert it to .env and let the script ask the recipient's Chat I
 
 ---
 To install curl on Ubuntu (Debian, Mint etc):
-sudo apt update -y && sudo apt install -y curl
+>sudo apt update -y && sudo apt install -y curl
 
 To install curl on Redhat (CentOS/Alma, Fedora etc):
-sudo dnf install -y curl or sudo yum install -y curl
+>sudo dnf install -y curl or sudo yum install -y curl
 
-To install curl on Arch (Manjaro, EndeavourOS): 
-sudo pacman -Sy curl
+To install curl on Arch (Manjaro, EndeavourOS):
+>sudo pacman -Sy curl
 
-To install curl on Alpine: 
-sudo apk add curl
+To install curl on Alpine:
+>sudo apk add curl
 
+---
 Make the script available from any place:
-sudo cp telegram-send-message.sh /usr/bin
-sudo cp telegram-send-file.sh /usr/bin
+>sudo cp telegram-send-message.sh /usr/bin/ \
+>sudo cp telegram-send-file.sh /usr/bin/
 
-Usage: 
->/usr/bin/telegram-send-message.sh 'message text'  or  telegram-send-message.sh \
->/usr/bin/telegram-send-file.sh absolute_path_to_file  or  telegram-send-file.sh absolute_path_to_file
+Usage in command-line: 
+>telegram-send-message.sh 'message text' \
+>telegram-send-file.sh absolute_path_to_file
+
+Usage in any script: 
+>/usr/bin/telegram-send-message.sh 'message text' \
+>/usr/bin/telegram-send-file.sh absolute_path_to_file
